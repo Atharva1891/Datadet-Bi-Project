@@ -1,7 +1,7 @@
 1. Arithmetic Operators
 Arithmetic operators perform mathematical operations such as addition, subtraction, multiplication, and division.
 
-Operator |	Symbol |	Description	Example
+Operator |	Symbol |	Description |	Example
 Addition	+ |	Adds two numbers or expressions.	 | [Price] + [Tax]
 Subtraction	-	|Subtracts one number from another. |	[Revenue] - [Cost]
 Multiplication	* |	Multiplies two numbers or expressions. |	[Price] * [Quantity]
