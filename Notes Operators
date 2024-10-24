@@ -16,7 +16,7 @@ This calculates the total sales by multiplying the price by the quantity sold.
 2. Comparison Operators
 Comparison operators are used to compare values. The result of these operations is either TRUE or FALSE, making them essential for logical expressions and conditional calculations.
 
-Operator|	Symbol |	Description	Example
+Operator|	Symbol |	Description	 | Example
 Equal To	= |	Checks if two values are equal. |	[Sales] = 1000
 Not Equal To	<>	| Checks if two values are not equal. |	[Revenue] <> 5000
 Greater Than	> |	Checks if one value is greater than another. |	[Profit] > 10000
@@ -30,7 +30,7 @@ This expression checks whether the sales are greater than 5000 and returns "Yes"
 3. Text (Concatenation) Operator &
 The concatenation operator is used to join two or more text strings together.
 
-Operator	Symbol	Description	Example
+Operator |	Symbol	 | Description |	Example
 Concatenation	&	Joins two or more text strings together.	[First Name] & " " & [Last Name]
 Example:
 [Full Name] = [First Name] & " " & [Last Name]
