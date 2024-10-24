@@ -50,16 +50,15 @@ This checks if both sales and profit exceed a certain threshold, returning "Yes"
 The IF function is used to evaluate a condition and return one value if TRUE, and another value if FALSE.
 Example:
 IF	IF	Performs a logical test and returns values based on conditions.	IF([Sales] > 1000, "High", "Low")
-Example:
 
-arduino
-Copy code
+Example:
 IF([Profit] > 0, "Profit", "Loss")
 This checks if profit is greater than zero, and returns "Profit" if true, and "Loss" if false.
 
 6. IN Operator
 The IN operator is used to check if a value exists within a specified list of values.
 IN	Checks if a value is in a list.	IF([Country] IN {"US", "UK"}, "Yes", "No")
+
 Example:
 IF([Region] IN {"North", "East", "South"}, "Valid", "Invalid")
 This checks if the region value is one of the specified regions, returning "Valid" if true.
@@ -67,6 +66,7 @@ This checks if the region value is one of the specified regions, returning "Vali
 7. Switch Operator
 The SWITCH function evaluates an expression against a list of values and returns the corresponding result.
 SWITCH	SWITCH	Returns different results based on conditions.	SWITCH([Category], "A", 1, "B", 2, "C", 3, 0)
+
 Example:
 SWITCH([Grade], "A", "Excellent", "B", "Good", "C", "Average", "F", "Fail", "Unknown")
 This switches between values in the Grade column and returns a text result based on the grade.
