@@ -1,0 +1,45 @@
+Data modeling in Power BI involves structuring your data tables and defining relationships between them to enable efficient reporting and analysis.
+
+1. Tables & Relationships: Load data and create relationships between tables using keys (e.g., ProductID in Sales and Products tables).
+2. Star Schema: Common and efficient structure with a central fact table (e.g., Sales) connected to dimension tables (e.g., Products, Customers, Dates).
+3. Calculated Columns & Measures: Use DAX to add custom columns or aggregate values (e.g., Total Sales).
+4. Data Types: Ensure proper data types for columns (e.g., text, dates, numbers).
+5. Hierarchies: Create hierarchies (e.g., Year > Quarter > Month) for drill-down capabilities.
+6. Many-to-Many Relationships: Use when necessary, but avoid for performance reasons.
+
+Topology Examples in Power BI
+Star Schema:
+Description: A central fact table connects to multiple dimension tables, forming a star-like structure.
+
+Use Case: This is the most commonly used schema in Power BI because it allows for efficient querying and better performance.
+Example:
+Fact Table: Sales (columns like OrderID, Date, Amount, ProductID, CustomerID)
+Dimension Tables:
+Products (ProductID, ProductName, Category)
+Customers (CustomerID, CustomerName, Region)
+Dates (DateID, Year, Month, Quarter)
+Benefits: Optimized for reporting and quick data retrieval.
+
+
+Snowflake Schema:
+Description: An extension of the star schema where dimension tables are normalized into multiple related tables.
+
+Use Case: This model is less common due to its complexity but may be used when dimension tables have sub-dimensions.
+Example:
+Fact Table: Sales (OrderID, Date, Amount, ProductID, CustomerID)
+Dimension Tables:
+Products (ProductID, ProductName, CategoryID)
+Categories (CategoryID, CategoryName)
+Customers (CustomerID, CustomerName, RegionID)
+Regions (RegionID, RegionName)
+Benefits: Reduces data redundancy, but queries can be slower due to the need for more joins.
+
+
+Many-to-Many Relationship:
+Description: Used when there is no clear hierarchy between two tables, and both can have multiple matching records.
+Use Case: When modeling complex scenarios like customer subscriptions where one customer can have many subscriptions, and one subscription can have many customers.
+Example:
+Customer Table: CustomerID, Name
+Subscription Table: SubscriptionID, Plan
+CustomerSubscription Bridge Table: CustomerID, SubscriptionID
+Benefits: Allows complex relationship structures to be represented accurately.
