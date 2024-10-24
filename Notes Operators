@@ -31,7 +31,8 @@ This expression checks whether the sales are greater than 5000 and returns "Yes"
 The concatenation operator is used to join two or more text strings together.
 
 Operator |	Symbol	 | Description |	Example
-Concatenation	&	Joins two or more text strings together.	[First Name] & " " & [Last Name]
+Concatenation	&	Joins two or more text strings together. | & | used to join two or more text strings together.
+|	[First Name] & " " & [Last Name]
 Example:
 [Full Name] = [First Name] & " " & [Last Name]
 This joins the first and last names together, with a space between them, to create a full name.
