@@ -21,8 +21,8 @@ Equal To	= |	Checks if two values are equal. |	[Sales] = 1000
 Not Equal To	<> | Checks if two values are not equal. |	[Revenue] <> 5000
 Greater Than	> |	Checks if one value is greater than another. |	[Profit] > 10000
 Less Than	< |	Checks if one value is less than another. |	[Discount] < 0.1
-Greater Than or Equal To	>= |	Checks if one value is greater than or equal to another. |	[Revenue] >= 5000
-Less Than or Equal To	<= |	Checks if one value is less than or equal to another. |	[Cost] <= 100
+Greater Than or Equal To |	>= |	Checks if one value is greater than or equal to another. |	[Revenue] >= 5000
+Less Than or Equal To |	<= |	Checks if one value is less than or equal to another. |	[Cost] <= 100
 Example:
 [Is High Value] = IF([Sales] > 5000, "Yes", "No")
 This expression checks whether the sales are greater than 5000 and returns "Yes" if true and "No" if false.
