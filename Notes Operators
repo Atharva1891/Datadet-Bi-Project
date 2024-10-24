@@ -3,7 +3,7 @@ Arithmetic operators perform mathematical operations such as addition, subtracti
 
 Operator |	Symbol |	Description |	Example
 Addition	+ |	Adds two numbers or expressions.	 | [Price] + [Tax]
-Subtraction	-	|Subtracts one number from another. |	[Revenue] - [Cost]
+Subtraction	- |Subtracts one number from another. |	[Revenue] - [Cost]
 Multiplication	* |	Multiplies two numbers or expressions. |	[Price] * [Quantity]
 Division	/ |	Divides one number by another. |	[Total] / [Count]
 Exponentiation	^ |	Raises a number to a power. |	[Base] ^ [Power]
@@ -18,7 +18,7 @@ Comparison operators are used to compare values. The result of these operations 
 
 Operator|	Symbol |	Description	 | Example
 Equal To	= |	Checks if two values are equal. |	[Sales] = 1000
-Not Equal To	<>	| Checks if two values are not equal. |	[Revenue] <> 5000
+Not Equal To	<> | Checks if two values are not equal. |	[Revenue] <> 5000
 Greater Than	> |	Checks if one value is greater than another. |	[Profit] > 10000
 Less Than	< |	Checks if one value is less than another. |	[Discount] < 0.1
 Greater Than or Equal To	>= |	Checks if one value is greater than or equal to another. |	[Revenue] >= 5000
