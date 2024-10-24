@@ -1,4 +1,5 @@
 Types of Relationships in Power BI:
+Relationships are based on keys (primary and foreign keys).
 
 One-to-Many (1:M):
 Most common relationship where one row in the parent table (e.g., Products) relates to many rows in the child table (e.g., Sales).
