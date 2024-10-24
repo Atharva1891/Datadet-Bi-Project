@@ -1,14 +1,13 @@
 1. Arithmetic Operators
 Arithmetic operators perform mathematical operations such as addition, subtraction, multiplication, and division.
 
-# Operator	Symbol	Description	Example
-Addition	+	Adds two numbers or expressions.	[Price] + [Tax]
-Subtraction	-	Subtracts one number from another.	[Revenue] - [Cost]
-Multiplication	*	Multiplies two numbers or expressions.	[Price] * [Quantity]
-Division	/	Divides one number by another.	[Total] / [Count]
-Exponentiation	^	Raises a number to a power.	[Base] ^ [Power]
-Unary Plus	+	Indicates a positive number.	+[Discount]
-Unary Minus	-	Indicates a negative number.	-[Penalty]
+Operator |	Symbol |	Description	Example
+Addition	+ |	Adds two numbers or expressions.	 | [Price] + [Tax]
+Subtraction	-	|Subtracts one number from another. |	[Revenue] - [Cost]
+Multiplication	* |	Multiplies two numbers or expressions. |	[Price] * [Quantity]
+Division	/ |	Divides one number by another. |	[Total] / [Count]
+Exponentiation	^ |	Raises a number to a power. |	[Base] ^ [Power]
+
 
 Example:
 [Total Sales] = [Price] * [Quantity]
@@ -17,74 +16,38 @@ This calculates the total sales by multiplying the price by the quantity sold.
 2. Comparison Operators
 Comparison operators are used to compare values. The result of these operations is either TRUE or FALSE, making them essential for logical expressions and conditional calculations.
 
-Operator	Symbol	Description	Example
-Equal To	=	Checks if two values are equal.	[Sales] = 1000
-Not Equal To	<>	Checks if two values are not equal.	[Revenue] <> 5000
-Greater Than	>	Checks if one value is greater than another.	[Profit] > 10000
-Less Than	<	Checks if one value is less than another.	[Discount] < 0.1
-Greater Than or Equal To	>=	Checks if one value is greater than or equal to another.	[Revenue] >= 5000
-Less Than or Equal To	<=	Checks if one value is less than or equal to another.	[Cost] <= 100
+Operator|	Symbol |	Description	Example
+Equal To	= |	Checks if two values are equal. |	[Sales] = 1000
+Not Equal To	<>	| Checks if two values are not equal. |	[Revenue] <> 5000
+Greater Than	> |	Checks if one value is greater than another. |	[Profit] > 10000
+Less Than	< |	Checks if one value is less than another. |	[Discount] < 0.1
+Greater Than or Equal To	>= |	Checks if one value is greater than or equal to another. |	[Revenue] >= 5000
+Less Than or Equal To	<= |	Checks if one value is less than or equal to another. |	[Cost] <= 100
 Example:
-
-csharp
-Copy code
 [Is High Value] = IF([Sales] > 5000, "Yes", "No")
 This expression checks whether the sales are greater than 5000 and returns "Yes" if true and "No" if false.
 
-3. Text (Concatenation) Operator
+3. Text (Concatenation) Operator &
 The concatenation operator is used to join two or more text strings together.
 
 Operator	Symbol	Description	Example
 Concatenation	&	Joins two or more text strings together.	[First Name] & " " & [Last Name]
 Example:
-
-mathematica
-Copy code
 [Full Name] = [First Name] & " " & [Last Name]
 This joins the first and last names together, with a space between them, to create a full name.
 
 4. Logical Operators
 Logical operators are used to combine multiple conditions or to return boolean values (TRUE or FALSE) based on the evaluation of expressions.
 
-Operator	Symbol	Description	Example
+Operator	Symbol	Description	Example:
 AND	&&	Returns TRUE if both conditions are true.	[Sales] > 500 && [Profit] > 100
 OR	`		`
-NOT	NOT	Returns TRUE if the condition is false.	NOT [Profit] > 0
-Example:
-
-csharp
-Copy code
 [High Sales and High Profit] = IF([Sales] > 5000 && [Profit] > 1000, "Yes", "No")
 This checks if both sales and profit exceed a certain threshold, returning "Yes" if both conditions are true.
 
-5. Boolean Operators
-Boolean operators evaluate conditions and return either TRUE or FALSE. These are often used in conditional statements and filters.
-
-TRUE: Represents a logical true value.
-FALSE: Represents a logical false value.
-Example:
-
-graphql
-Copy code
-IF([IsActive] = TRUE, "Active", "Inactive")
-This formula checks if a field called "IsActive" is TRUE and returns "Active" or "Inactive" accordingly.
-
-6. Assignment Operator
-The assignment operator is used to assign values to variables or fields in DAX formulas.
-
-Operator	Symbol	Description	Example
-Assignment	=	Assigns a value to a variable or field.	Total Sales = [Price] * [Quantity]
-Example:
-
-css
-Copy code
-[Total Cost] = [Unit Cost] * [Quantity]
-This formula assigns the result of multiplying the unit cost and quantity to the Total Cost field.
-
-7. Conditional (IF) Operator
+5. Conditional (IF) Operator
 The IF function is used to evaluate a condition and return one value if TRUE, and another value if FALSE.
-
-Operator	Syntax	Description	Example
+Example:
 IF	IF	Performs a logical test and returns values based on conditions.	IF([Sales] > 1000, "High", "Low")
 Example:
 
@@ -93,26 +56,16 @@ Copy code
 IF([Profit] > 0, "Profit", "Loss")
 This checks if profit is greater than zero, and returns "Profit" if true, and "Loss" if false.
 
-8. IN Operator
+6. IN Operator
 The IN operator is used to check if a value exists within a specified list of values.
-
-Operator	Syntax	Description	Example
-IN	IN	Checks if a value is in a list.	IF([Country] IN {"US", "UK"}, "Yes", "No")
+IN	Checks if a value is in a list.	IF([Country] IN {"US", "UK"}, "Yes", "No")
 Example:
-
-mathematica
-Copy code
 IF([Region] IN {"North", "East", "South"}, "Valid", "Invalid")
 This checks if the region value is one of the specified regions, returning "Valid" if true.
 
-9. Switch Operator
+7. Switch Operator
 The SWITCH function evaluates an expression against a list of values and returns the corresponding result.
-
-Operator	Syntax	Description	Example
 SWITCH	SWITCH	Returns different results based on conditions.	SWITCH([Category], "A", 1, "B", 2, "C", 3, 0)
 Example:
-
-arduino
-Copy code
 SWITCH([Grade], "A", "Excellent", "B", "Good", "C", "Average", "F", "Fail", "Unknown")
 This switches between values in the Grade column and returns a text result based on the grade.
