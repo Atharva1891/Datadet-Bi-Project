@@ -1,0 +1,28 @@
+Types of Relationships in Power BI:
+
+One-to-Many (1:M):
+Most common relationship where one row in the parent table (e.g., Products) relates to many rows in the child table (e.g., Sales).
+Example: One ProductID in the Products table connects to multiple records in the Sales table.
+
+Many-to-One (M:1):
+This is essentially the reverse of One-to-Many. It still means that many records in the child table map to one in the parent table.
+Example: Many sales transactions map to one customer.
+
+Many-to-Many (M:M):
+Used when multiple rows in both tables relate to multiple rows in the other. A bridge table or intermediary table is often required.
+Example: A Customer can purchase multiple Products, and the same Product can be bought by multiple Customers.
+
+One-to-One (1:1):
+A rare relationship where one row in a table relates to only one row in another.
+Example: Each employee in an Employee table might have a unique entry in a Manager table.
+
+Cardinality & Cross-Filtering:
+1.Cardinality: Defines how many rows in one table relate to how many in the other (One-to-One, One-to-Many, etc.).
+2.Cross-filtering: Determines how filters flow between tables. In Power BI, you can set the direction of cross-filtering:
+3.Single: Filters only flow from one table to another.
+4.Both: Filters apply in both directions, which is useful for more complex models (e.g., many-to-many relationships).
+
+Example of Setting Relationships:
+Suppose you have a Sales table, a Products table, and a Customers table. You would create:
+One-to-Many between Products and Sales via ProductID.
+One-to-Many between Customers and Sales via CustomerID.
