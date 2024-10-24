@@ -43,3 +43,13 @@ Customer Table: CustomerID, Name
 Subscription Table: SubscriptionID, Plan
 CustomerSubscription Bridge Table: CustomerID, SubscriptionID
 Benefits: Allows complex relationship structures to be represented accurately.
+
+Advantages of Data Modeling in Power BI:
+
+1.Improved Performance: A well-structured data model reduces query load and speeds up calculations, making reports faster to generate.
+2.Simplified Reporting: With clear relationships between tables, creating visuals and reports becomes easier and more intuitive.
+3.Accurate Data Analysis: Ensures that calculations (e.g., totals, averages) are accurate by defining the right relationships and data types.
+4.Scalability: A good data model allows you to easily add new data sources or expand analysis without reworking existing reports.
+5.Reusability: Once a data model is built, it can be reused across multiple reports, saving time in future projects.
+6.Reduced Redundancy: Normalizing data (like in a star schema) reduces duplication, ensuring the model is lightweight and efficient.
+7.Consistency: Ensures consistent definitions of metrics and dimensions across the entire organization, reducing ambiguity in reports.
